@@ -5,7 +5,7 @@ Our CSE 151A group's members are:
 - Abhijay Deevi (adeevi@ucsd.edu)
 - Kevin Do (k8do@ucsd.edu)
 - Ethan Cota
-- Teo 
+- Theodoros Hadjitofis (thadjitofis@ucsd.edu)
 - Ragini Bomma (rbomma@ucsd.edu)
 
 Our group is planning on doing a crypto and stock time series prediction. We plan on using historical data about specific stocks and cryptocurrencies to predict how the stock-exchange and crypto-exchange market can fluctuate in the future.
