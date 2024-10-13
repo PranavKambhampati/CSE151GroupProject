@@ -11,8 +11,11 @@ Our CSE 151A group's members are:
 Our group is planning on doing a stock time series prediction. We plan on using historical data about specific stocks to predict how the stock-exchange and crypto-exchange market can fluctuate in the future. In addition, we will figure out the optimal time to buy and sell. 
 
 These are the datasets we are currently planning on using:
+
 Apple: https://www.kaggle.com/datasets/prathamjyotsingh/apple-stocks
+
 S&P 500: https://www.kaggle.com/datasets/rikinzala/s-and-p-500-esg-and-stocks-data-2023-24
+
 NVIDIA: https://www.kaggle.com/datasets/jvanark/nvidia-daily-stock-price-data
 
 # Abstract (draft)
