@@ -16,4 +16,6 @@ These are the datasets we are currently planning on using:
 
 # Abstract (draft)
 
-Our project aims to analyze historical data on cryptocurrency and stock prices through their time series. We will utilize datasets on cryptocurrencies like Bitcoin and stocks like NVIDIA to train predictive models that strive to capture patterns in price movements. We hope to gain insights into how machine learning models can be used to predict trends in highly volataile markets and understand the potential of machine learning in a financial application.
+Our project aims to analyze historical data on cryptocurrency and stock prices through their time series to help people figure out the best time to buy and sell crypto and stocks (introduction). We will utilize datasets on cryptocurrencies like Bitcoin and stocks like NVIDIA to train predictive models through Python that strive to capture patterns in price movements (methods). Our models will be able to successfully predict the best times to buy and sell by parsing through data and finding the trends (results). We hope to gain insights into how machine learning models can be used to predict trends in highly volataile markets and understand the potential of machine learning in a financial application (discussion).
+
+We can delete the things in parenthesis after it is finalized. its just there to show the different sections of the abstraction
