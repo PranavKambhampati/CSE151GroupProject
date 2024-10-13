@@ -3,7 +3,7 @@
 Our CSE 151A group's members are:
 - Pranav Kambhampati (pkambhampati@ucsd.edu)
 - Abhijay Deevi (adeevi@ucsd.edu)
-- Kevin Do
+- Kevin Do (k8do@ucsd.edu)
 - Ethan Cota
 - Teo 
 - Ragini Bomma (rbomma@ucsd.edu)
