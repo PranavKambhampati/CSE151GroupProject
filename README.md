@@ -6,7 +6,7 @@ Our CSE 151A group's members are:
 - Kevin Do
 - Ethan Cota
 - Teo 
-- Ragini
+- Ragini Bomma (rbomma@ucsd.edu)
 
 Our group is planning on doing a crypto time series prediction. We plan on using historical data about specific cryptocurrencies to predict how the crypto-exchange market can fluctuate in the future.
 
