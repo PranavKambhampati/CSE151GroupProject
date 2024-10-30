@@ -12,9 +12,9 @@ Our group is planning on doing a stock time series prediction. We plan on using 
 
 These are the datasets we are currently planning on using:
 
-S&P 500: https://www.kaggle.com/datasets/rikinzala/s-and-p-500-esg-and-stocks-data-2023-24
+S&P 500: https://www.kaggle.com/datasets/henryhan117/sp-500-historical-data
 
-NVIDIA: https://www.kaggle.com/datasets/jvanark/nvidia-daily-stock-price-data
+NVIDIA: https://www.kaggle.com/datasets/programmerrdai/nvidia-stock-historical-data
 
 # Abstract (draft)
 
