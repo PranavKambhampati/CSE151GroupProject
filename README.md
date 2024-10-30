@@ -8,6 +8,8 @@ Our CSE 151A group's members are:
 - Theodoros Hadjitofis (thadjitofis@ucsd.edu)
 - Ragini Bomma (rbomma@ucsd.edu)
 
+#### Link to our Google Collab: [CLICK](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
+
 Our group is planning on doing a stock time series prediction. We plan on using historical data about specific stocks to predict how the stock-exchange and crypto-exchange market can fluctuate in the future. In addition, we will figure out the optimal time to buy and sell. 
 
 These are the datasets we are currently planning on using:
