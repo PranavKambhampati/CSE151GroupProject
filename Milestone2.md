@@ -35,7 +35,8 @@ Using *stock price data* \+ add. Features:
 
 #### Data evaluation
 
-	We are dealing with **numerical time-series data**. We have a record for each day, containing the Open, High, Low, Close, and Adj. Close price of the stock, in addition to the volume (OHLC). We have **6393 records** (observations) in our dataset, representing that many days of trading. There is **no missing data**  
+We are dealing with **numerical time-series data**. We have a record for each day, containing the Open, High, Low, Close, and Adj. Close price of the stock, in addition to the volume (OHLC). We have **6393 records** (observations) in our dataset, representing that many days of trading. There is **no missing data**  
+
 **Datatypes:**
 
 * Integer: (OHLC)  
