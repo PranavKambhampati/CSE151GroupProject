@@ -67,7 +67,7 @@ Example Indicators
 
 [further examples](https://www.home.saxo/learn/guides/trading-strategies/a-guide-to-the-10-most-popular-trading-indicators)
 
-## Implementation
+### Implementation
 In order to implement these indicators, we can use [TA (Technical Analysis) Lib](https://ta-lib.org/), a Python library that contains a wide range of existing functions to generate technical indicators from stock data
 
 
