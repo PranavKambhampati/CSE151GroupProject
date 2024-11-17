@@ -25,8 +25,8 @@ Our project aims to analyze historical data on stock prices through their time s
 # Data Exploration
 
 ## Data Evaluation
-We are dealing with numerical time-series data. We have a record for each day, containing the Open, High, Low, Close, and Adj. Close price of the stock, in addition to the volume (OHLC). We have 6393 records (observations) in our dataset, representing that many days of trading. There is no missing data
-We are dealing with **numerical time-series data**. We have a record for each day, containing the Open, High, Low, Close, and Adj. Close price of the stock, in addition to the volume (OHLC). We have **6393 records** (observations) in our dataset, representing that many days of trading. There is **no missing data**  
+We are dealing with numerical time-series data. We have a record for each day, containing the Open, High, Low, Close, and Adj. Close price of the stock, in addition to the volume (OHLC). We have 6393 records (observations) in our dataset, representing that many days of trading. There is no missing data.
+
 **Datatypes:**
 
 * Integer: (OHLC)  
@@ -69,5 +69,13 @@ Example Indicators
 
 ### Implementation
 In order to implement these indicators, we can use [TA (Technical Analysis) Lib](https://ta-lib.org/), a Python library that contains a wide range of existing functions to generate technical indicators from stock data
+
+As a part of creating a model to predict stock price, we wrote a linear regression model that uses a Moving Average Indicator, Accumulation Distribution and an RSI indicator. We also calculated the MSE after we added these metrics and plotted the prediction along the actual data. This model looks pretty promising and we will probably refine this further in the next milestone. Our current MSE is about 0.3 which we believe to be pretty low because the numerical values of the stock are larger, indicating relatively good accuracy. Our R^2 test is also pretty high, at 0.99, indicating that the model is pretty well-fitting. We ran other metrics, such as the RMSE and MAE for the test and train splits and the model appears to be pretty accurate, so we will proceed with a linear model.
+
+Our model fits the linear regression line pretty well but we are considering exploring other models. One other model we were thinking of doing was a Support Vector Machine since some research indicated that SVMs could be good to predict whether the stock price will go up or down. This could be another informative metric to analyze. We have already started writing out a preliminary version of this model.
+
+For this milestone, we updated our notebook by adding the linear regression model and calulating some indicators that can go towards aiding the model in making its prediction.
+
+The conclusion of our first model is that its a pretty good fit with relatively low MSE. We can improve on it by potentially adding more metrics to make it more accurate.
 
 
