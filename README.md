@@ -25,7 +25,7 @@ Our project aims to analyze historical data on stock prices through their time s
 # Data Exploration
 
 ## Data Evaluation
-We are dealing with numerical time-series data. We have a record for each day, containing the Open, High, Low, Close, and Adj. Close price of the stock, in addition to the volume (OHLC). We have 6393 records (observations) in our dataset, representing that many days of trading. There is no missing data in our dataset.
+We are dealing with numerical time-series data. We have a record for each day, containing the Open, High, Low, Close, and Adj. Close price of the stock, in addition to the volume (OHLC). We have 6393 records (observations) in our dataset, representing that many days of trading. There is no missing data.
 
 **Datatypes:**
 
