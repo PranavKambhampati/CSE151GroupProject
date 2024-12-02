@@ -78,7 +78,7 @@ For this milestone, we updated our notebook by adding the linear regression mode
 
 The conclusion of our first model is that its a pretty good fit with relatively low MSE. We can improve on it by potentially adding more metrics to make it more accurate.
 
-### Second Model
+### Second Model - Milestone 4
 
 We received feedback from our last model about our training and testing data split and we fixed this by manually splitting the data based on the first 80% for the training and the second 20% for the testing data. We did this instead of the randomize split we had before. This ensures that we aren't using future values to predict past values.
 
