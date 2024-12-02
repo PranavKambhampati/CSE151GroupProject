@@ -98,3 +98,5 @@ We decided to implement an LSTM model for Milestone 4 because of its ability to 
 
 Right now it seems like the model is working really good and predicting very well. However, going back to our linear regression model from Milestone 3, we are kind of unsure why it is so accurate. But it seems like the new split means that the model isn't using the "future" data so it should be correct but we are surprised on how good it is.
 However, because the LSTM model uses deep learning and is better tailored towards making the predictions we want to make, we are impressed but not surprised by how good it is.
+
+We have included some details on how accurate the model is in the notebook but we can't classify the predictions in terms of FP and FN because we have numerical data and not categorical data.
