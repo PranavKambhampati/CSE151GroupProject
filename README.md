@@ -78,4 +78,22 @@ For this milestone, we updated our notebook by adding the linear regression mode
 
 The conclusion of our first model is that its a pretty good fit with relatively low MSE. We can improve on it by potentially adding more metrics to make it more accurate.
 
+### Second Model
 
+We received feedback from our last model about our training and testing data split and we fixed this by manually splitting the data based on the first 80% for the training and the second 20% for the testing data. We did this instead of the randomize split we had before.
+
+#### Where does our model fit in the fitting graph? 
+
+Our model fits basically in the same position as the actual stock price data because it seems like our model is accurate. The LSTM model smoothens out the trend line, so it doesn't get every single exact up and down of the actual price graph.
+
+#### What are the next models you are thinking of and why?
+
+The next model we are thinking of is SVM. We have tried this a bit before but it wasn't as successful as our current model. However, with some more knowledge on building this model, it could be useful for us to more accurately predict the stock prices.
+
+#### Our new LSTM model:
+
+
+
+#### Conclusion:
+
+Right now it seems like the model is working really good and predicting very well. However we are kind of unsure why it is so accurate. But it seems like the new split means that the model isn't using the "future" data so it should be correct but we are surprised on how good it is.
