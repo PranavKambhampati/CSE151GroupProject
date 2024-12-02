@@ -80,7 +80,7 @@ The conclusion of our first model is that its a pretty good fit with relatively 
 
 ### Second Model
 
-We received feedback from our last model about our training and testing data split and we fixed this by manually splitting the data based on the first 80% for the training and the second 20% for the testing data. We did this instead of the randomize split we had before.
+We received feedback from our last model about our training and testing data split and we fixed this by manually splitting the data based on the first 80% for the training and the second 20% for the testing data. We did this instead of the randomize split we had before. This ensures that we aren't using future values to predict past values.
 
 #### Where does our model fit in the fitting graph? 
 
@@ -92,8 +92,9 @@ The next model we are thinking of is SVM. We have tried this a bit before but it
 
 #### Our new LSTM model:
 
-
+We decided to implement an LSTM model for Milestone 4 because of its ability to handle sequential data. Stock data is inherently sequential as each data point depends on past points. We did additional research to understand that LSTM models are a specialized type of Recurrent Neural Networks that are tailored for this type of task. LSTM models are also good for capturing non-linear relationships, which was a potential problem with our linear regression model from Milestone 3. LSTMS, as a part of deep learning, are power to model these non-linear relationships. To build our LSTM model, we had to scale the data using a MinMaxScaler and then manually split the data. Based on some research, we used the adam optimizer and a mean-squared error loss function. We used 20 epochs and a batch size of 32 to train our LSTM model. Plotting the predicted data against the test data yielded really good results.
 
 #### Conclusion:
 
-Right now it seems like the model is working really good and predicting very well. However we are kind of unsure why it is so accurate. But it seems like the new split means that the model isn't using the "future" data so it should be correct but we are surprised on how good it is.
+Right now it seems like the model is working really good and predicting very well. However, going back to our linear regression model from Milestone 3, we are kind of unsure why it is so accurate. But it seems like the new split means that the model isn't using the "future" data so it should be correct but we are surprised on how good it is.
+However, because the LSTM model uses deep learning and is better tailored towards making the predictions we want to make, we are impressed but not surprised by how good it is.
