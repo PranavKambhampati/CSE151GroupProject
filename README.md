@@ -8,7 +8,114 @@ Our CSE 151A group's members are:
 - Theodoros Hadjitofis (thadjitofis@ucsd.edu)
 - Ragini Bomma (rbomma@ucsd.edu)
 
+# NVIDIA Stock Price Modeling Report
+
+## Introduction 
+
+The stock market is used by many individuals,from professional investors to more casual traders. Most buy stocks with the general goal to make more money, off it, or at least protect assets by putting them into something stable. However the stock market is extremely unpredictable. Because of the variety of variables and conditions that all go into determining the price of a stock, there is no guaranteed way to be successful. Trying to predict the price or movement of a stock is a complicated but interesting problem that requires skills in data science, machine learning, and economics. Because of its relevance to the real world, and its application in decision-making and forecasting, we wanted to choose this topic as the foundation for our project. We decided to use a dataset of daily trading data for the last two decades for Nvidia’s stock that we sourced from Kaggle.
+
+	Hypothesis: Given a dataset of historical NVIDIA price data, we can design and train a model to predict future prices.
+
+In a real-world setting, designing and training these models requires vast amounts of data and much more complex models, but we wanted to see how far we could get with the foundational data science and machine learning skills we have. The accuracy of the model in a setting like this is absolutely essential, because otherwise in practice the person using it would lose money. Professional investors and funds using models like these are trying to maximize their returns with minimal risk, and these models need to be beneficial with its recommendations of proper investments or portfolio optimizations. The impact of market models like these even extends beyond the stock market itself, because they are also applicable in other chaotic environments. Interactions on social networks, the spread of diseases across a population, and even the weather are all examples of this. The techniques and insights from this project could also apply in these settings as well.
+
+
+## Methods
+
+
+### Data Exploration
+Our first step for this project was to look through our data. After analysis of our data we found that there was no missing information or irregularities. Next we looked at the data itself to get an idea of their distributions and other statistical information.
+
+### Data Preprocessing
+Next we have to process our dataset into something we can use for our models. We decided to utilize technical analysis indicators as our features. In order to implement these indicators, we utilized TA-Lib, a Python library that contains many of these functions which can be applied to transform stock data easily.
+
+#### Model 1
+For our first model, we implemented a Linear Regression Model to predict the price data of the stock. We used MACD, A/D, and RSI metrics (see Discussion for details) as our features, and the closing price for our target. To evaluate the accuracy of our model we calculated the MSE, as well as plotting our predictions against the actual prices.
+
+#### Model 2
+The next model we decided to try was a Long Short-Term Memory Model. Before training we prepared our data by transforming it into fixed-length sequences, normalizing our features, and reshaping our data to fit a three dimensional format.
+
+We trained our model using Adam as our optimizer and the MSE as our loss function. We trained the model for 20 epochs using batch sizes of 32. We evaluated the accuracy of this model using MSE as well as RMSE, and plotted our predictions against the actual prices.
+
+
+## Results
+
+### Data Exploration
+
+Our dataset contains 6 columns of 6393 records of data. There is a Date column, 5 columns relating to the Price, and a Volume column. There is missing or irregular data in our dataset. The price information all have very similar ranges, and volume has a very wide range. All of the columns have a heavy right-skew, and are overall increasing with time.
+
+IMAGES ADD HERE
+
+### Data Preprocessing
+
+During this step, we used our dataset to construct the technical indicators we wanted to use. These are Moving Average Convergence/Divergence (MACD), Accumulation/Distribution (A/D), and Relative Strength Index (RSI). After this we performed normalization on our features to set their range between 0 and 1.
+Finally split our data into a training and testing set using a standard 80:20 split. This was performed using the most recent 20% of data as our testing and the remaining data for training.
+
+
+#### Model 1
+After training our model the MSE was 0.3 indicating a good accuracy. The R2 tests were at 0.99, indicating high correlation with our features and the target price.
+We ran other metrics, such as the RMSE and MAE for the test and train splits.
+
+IMAGES ADD HERE
+
+#### Model 2
+
+The MSE and RMSE were calculated here and showed improved performance over the linear regression model. The LSTM model also successfully predicted the trends shown through the predicted vs. actual plot. Finally, the evaluation metrics here the MSE and RMSE were lower compared to the linear model, telling us that the LSTM was better at modeling since it also considered the sequential dependencies.
+
+IMAGES ADD HERE
+
+## Discussion
+
+### Data Exploration
+
+We started our exploration step first by verifying the integrity of our data. We searched through it to find any irregularities within the data and checked for missing values. We found the dataset was already clean and did not need any additional cleaning during preprocessing, so we could get directly into our analysis (Fig. 1). 
+We have 5 price columns, Open, High, Low, Close, and Adj. Close, have extremely similar ranges (Fig. 3), so we used Close during our base level analysis. Looking for any clear trends or patterns that appeared we found that the day to day the price is volatile and unpredictable, but there is a clear upward trend as time increases. This is demonstrated by the heavy right skew in our dataset. However based on the price and volume data alone, seeing the relationship between our dataset and potential future prices is not clear. Because of this we focused on basic information and statistics for this step.
+
+### Data Preprocessing
+
+##### Technical Indicators	
+A brief explanation of technical analysis and indicators
+
+There are many ‘features’ which have been hypothesized within the finance industry to attempt to make accurate predictions. These are mathematical patterns which are derived from historical data, and are used by technical traders or investors to predict future price trends and make trading decisions.
+
+For our project, this is the most vital part because the features we create here form the baseline for the rest of our work with the models. After ensuring that all the data was valid and present, our next step was to select features which we could use to accurately predict the price. Instead of trying to come up with our own features from scratch, it is better to instead take advantage of these already existing formulae. There is a vast number of these indicators, and countless ways they can be implemented in combination. After testing and analysis we decided to focus on these three features:
+
+MACD (Moving Average Convergence/Divergence)
+	Indicates momentum based on difference of moving averages
+A/D (Accumulation Distribution): 
+Indicates momentum based on supply and demand
+RSI (Relative Strength Index)
+Indicates momentum based on relative price movement
+
+
+After creating these we performed normalization using MinMaxScaler to ensure consistency during model training. Our final preprocessing step is small but very important. In order to ensure that our model is not trained with data that is related to our test set, we need to split our data temporally. Using a standard 80:20 training/testing split, we split our dataset such that our testing data is the most recent 20% of trading data, and the training is the rest.
+
+#### Model 1
+Our first model was very simple and straightforward to implement. Beforehand we had an understanding that this likely would not fully represent the relationship between our features and the price because the trends of stock prices are generally not linear. Despite this it provided decent results with a high correlation coefficient and a low loss. The linear relation between our technical indicators were pretty good, but that was a little suspicious because it is generally known that stock prices are non-linear and influenced by a lot of different things. In addition, a simple linear regression model won’t capture the full complexity of the stock market. This also doesn’t account for overfitting, can be susceptible to outliers, and have a bunch more problems. 
+
+#### Model 2
+We decided that we should select a model with higher complexity to better account for the changes of these market trends. By implementing a Long Short-Term Memory (LSTM) model, our data was represented into sequential chunks and predictions were more continuous allowing our model non-linear relationships. This was a decent approach and a good next step, because this model outperformed our previous Linear Regression model in both performance and accuracy, and our trend line matched with actual values much better.
+
+## Conclusion
+Because the task we selected is extremely complex, trying to model a real-world solution requires a lot more information than we were working with. But given the data we were working with we concluded that much of our results were successful, although there are many areas that we could improve. If we used a larger dataset, either with other related stock tickers or more granular data (ex: by second or minute), that alone could add improvement to the overall accuracy of our model.
+
+In our preprocessing step, we tried a few different combinations of indicators and ended up sticking with a few that were commonly used. One thing we could have done differently is try a greater variety of indicators. Selecting these was a difficult process though without background knowledge about actually putting some of these techniques into practice, so for us this step was a lot of trial and error.
+
+During our modeling step, while the results we got from our first model were successful, it may have been a good idea to pick a more complex model to start even if we achieved worse results. We knew that the linear model alone would not be enough to capture the entire relationship between our features and the data, but it was helpful in that it confirmed that there was a strong correlation with the indicators that we picked. This model also does not account for overfitting, and is much more susceptible to outliers and unseen data. Luckily much of these problems we had in our first model we were able to account for by implementing the LSTM. Our predictions and trend line looked much better under this model. We used an index fund and a tech company that have been steadily increasing for a long time, so it would make sense that this would work out. We are unlikely to see the same results if we applied the model onto a much more volatile stock, or one that did not have as large of a market capitalization. This model alone only accounts for details within the price and volume itself, if there was information regarding the company, or other technical details that don’t appear within the price data, our model would start making inaccurate predictions
+	
+ All in all, the results are still looking very good. We are making good progress towards something that could actually solve the stock market problem. It is also important to remember that stock price prediction is very hard because of the influence of countless factors. However, by adding more and more features and making sure to consider everything that comes to a stock market price, we should eventually be able to somewhat accurately predict prices.
+
+## Statement of Collaboration
+
+Pranav Kambhampati: Coder: Wrote code for both models
+Abhijay Deevi: Writer: Documentation and final written report
+Kevin Do: Coder: Wrote code for both models
+Ethan Cota: Writer: Documentation and data preprocessing
+Theodoros Hadjitofis: Writer/Github: Documentation and managing GitHub
+Ragini Bomma: Coder/Github : Wrote code for one model and Github readme
+
+
 #### Link to our Google Collab: [Jupyter Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
+#### Link CSE 151A Group Project Report: https://docs.google.com/document/d/1VSGpvdCGO1kRqmZKwCLR7EzSLKd6nTViQp5yKNvCdY8/edit?usp=sharing
 
 We have included our previous milestones submissions below for reference
 
