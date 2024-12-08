@@ -1,4 +1,4 @@
-# CSE151 Group Project
+# CSE 151A Group Project
 
 Our CSE 151A group's members are:
 - Pranav Kambhampati (pkambhampati@ucsd.edu)
