@@ -72,7 +72,7 @@ We have 5 price columns, Open, High, Low, Close, and Adj. Close, have extremely 
 
 ### Data Preprocessing
 
-##### Technical Indicators	
+#### Technical Indicators	
 A brief explanation of technical analysis and indicators
 
 There are many ‘features’ which have been hypothesized within the finance industry to attempt to make accurate predictions. These are mathematical patterns which are derived from historical data, and are used by technical traders or investors to predict future price trends and make trading decisions.
@@ -82,9 +82,9 @@ For our project, this is the most vital part because the features we create here
 MACD (Moving Average Convergence/Divergence)
 	Indicates momentum based on difference of moving averages
 A/D (Accumulation Distribution): 
-Indicates momentum based on supply and demand
+	Indicates momentum based on supply and demand
 RSI (Relative Strength Index)
-Indicates momentum based on relative price movement
+	Indicates momentum based on relative price movement
 
 
 After creating these we performed normalization using MinMaxScaler to ensure consistency during model training. Our final preprocessing step is small but very important. In order to ensure that our model is not trained with data that is related to our test set, we need to split our data temporally. Using a standard 80:20 training/testing split, we split our dataset such that our testing data is the most recent 20% of trading data, and the training is the rest.
