@@ -8,6 +8,8 @@ Our CSE 151A group's members are:
 - Theodoros Hadjitofis (thadjitofis@ucsd.edu)
 - Ragini Bomma (rbomma@ucsd.edu)
 
+#### Link to our Google Collab: [Jupyter Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
+
 # NVIDIA Stock Price Modeling Report
 
 ## Introduction 
