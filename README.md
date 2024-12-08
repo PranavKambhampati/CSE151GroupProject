@@ -106,12 +106,12 @@ During our modeling step, while the results we got from our first model were suc
 
 ## Statement of Collaboration
 
-Pranav Kambhampati: Coder: Wrote code for both models
-Abhijay Deevi: Writer: Documentation and final written report
-Kevin Do: Coder: Wrote code for both models
-Ethan Cota: Writer: Documentation and data preprocessing
-Theodoros Hadjitofis: Writer/Github: Documentation and managing GitHub
-Ragini Bomma: Coder/Github : Wrote code for one model and Github readme
+- Pranav Kambhampati: Coder: Wrote code for both models
+- Abhijay Deevi: Writer: Documentation and final written report
+- Kevin Do: Coder: Wrote code for both models
+- Ethan Cota: Writer: Documentation and data preprocessing
+- Theodoros Hadjitofis: Writer/Github: Documentation and managing GitHub
+- Ragini Bomma: Coder/Github : Wrote code for one model and Github readme
 
 
 #### Link to our Google Collab: [Jupyter Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
