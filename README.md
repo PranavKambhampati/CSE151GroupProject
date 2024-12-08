@@ -24,17 +24,28 @@ In a real-world setting, designing and training these models requires vast amoun
 
 ### Data Exploration
 
-![Data Exploration](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL#scrollTo=1Us-MxJhWQl2&line=6&uniqifier=1)
+[Data Exploration](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL#scrollTo=1Us-MxJhWQl2&line=6&uniqifier=1)
 
 Our first step for this project was to look through our data. After analysis of our data we found that there was no missing information or irregularities. Next we looked at the data itself to get an idea of their distributions and other statistical information.
 
 ### Data Preprocessing
+
+[Data Preprocessing](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL#scrollTo=Ky_j6k0Y3bM7&line=1&uniqifier=1)
+
 Next we have to process our dataset into something we can use for our models. We decided to utilize technical analysis indicators as our features. In order to implement these indicators, we utilized TA-Lib, a Python library that contains many of these functions which can be applied to transform stock data easily.
 
 #### Model 1
+
+[Model 1: Linear Regression Model Prep](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL#scrollTo=nDvI2RcCieF5&line=4&uniqifier=1)
+
+[Model 1: Linear Regression Model Training and Prediction](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL#scrollTo=gK5RpE_anBEI&line=12&uniqifier=1)
+
 For our first model, we implemented a Linear Regression Model to predict the price data of the stock. We used MACD, A/D, and RSI metrics (see Discussion for details) as our features, and the closing price for our target. To evaluate the accuracy of our model we calculated the MSE, as well as plotting our predictions against the actual prices.
 
 #### Model 2
+
+[Model 2: LSTM Neural Network Model](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL#scrollTo=hBNqKdsJCK6H&line=22&uniqifier=1)
+
 The next model we decided to try was a Long Short-Term Memory Model. Before training we prepared our data by transforming it into fixed-length sequences, normalizing our features, and reshaping our data to fit a three dimensional format.
 
 We trained our model using Adam as our optimizer and the MSE as our loss function. We trained the model for 20 epochs using batch sizes of 32. We evaluated the accuracy of this model using MSE as well as RMSE, and plotted our predictions against the actual prices.
@@ -74,6 +85,9 @@ Finally split our data into a training and testing set using a standard 80:20 sp
 
 
 #### Model 1
+
+[Linear Regression Results](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL#scrollTo=wGJmB33S81n5&line=12&uniqifier=1)
+
 After training our model the MSE was 0.3 indicating a good accuracy. The R2 tests were at 0.99, indicating high correlation with our features and the target price.
 We ran other metrics, such as the RMSE and MAE for the test and train splits.
 
@@ -87,6 +101,8 @@ We ran other metrics, such as the RMSE and MAE for the test and train splits.
 *Figure 5: Predicted vs Actual Prices*
 
 #### Model 2
+
+[LSTM Model Results](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL#scrollTo=j0hcQ8WWDkKL&line=6&uniqifier=1)
 
 The MSE and RMSE were calculated here and showed improved performance over the linear regression model. The LSTM model also successfully predicted the trends shown through the predicted vs. actual plot. Finally, the evaluation metrics here the MSE and RMSE were lower compared to the linear model, telling us that the LSTM was better at modeling since it also considered the sequential dependencies.
 
