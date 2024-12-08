@@ -47,6 +47,7 @@ Our dataset contains 6 columns of 6393 records of data. There is a Date column, 
 
 *Figure 1: Dataset Header*
 
+
 ![image](https://github.com/user-attachments/assets/aba1077c-a429-4725-a92d-735d9f758357)
 
 *Figure 2: Missing Data*
@@ -76,6 +77,7 @@ We ran other metrics, such as the RMSE and MAE for the test and train splits.
 ![image](https://github.com/user-attachments/assets/7a43cab9-a39b-428b-96b8-1382ae3dee32)
 
 *Figure 4: Model 1 Evaluation Report*
+
 
 ![image](https://github.com/user-attachments/assets/bcd96ea9-c2c9-48d5-91c5-ee0b8c2219f8)
 
