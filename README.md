@@ -49,7 +49,7 @@ We are dealing with numerical time-series data. We have a record for each day, c
 
 *See notebook for data plots*
 
-# Data Preprocessing
+## Data Preprocessing
 There are many “features” that have been hypothesized within the finance industry to attempt to make accurate predictions on stock data. Instead of trying to come up with our own features from scratch, it will be a good idea to take advantage of these already existing formulae. There are many types of these *Technical Analysis Indicators*, a large portion of our project may be simply exploring different indicators and combinations of them.
 
 * **Technical indicator:**  A mathematical pattern derived from historical data used by technical traders or investors to predict future price trends and make trading decisions  
@@ -70,7 +70,7 @@ Example Indicators
 
 [Further Examples](https://www.home.saxo/learn/guides/trading-strategies/a-guide-to-the-10-most-popular-trading-indicators)
 
-### Milestone 3: Pre-processing
+# Milestone 3: Pre-processing
 In order to implement these indicators, we can use [TA (Technical Analysis) Lib](https://ta-lib.org/), a Python library that contains a wide range of existing functions to generate technical indicators from stock data
 
 As a part of creating a model to predict stock price, we wrote a linear regression model that uses a Moving Average Indicator, Accumulation Distribution and an RSI indicator. We also calculated the MSE after we added these metrics and plotted the prediction along the actual data. This model looks pretty promising and we will probably refine this further in the next milestone. Our current MSE is about 0.3 which we believe to be pretty low because the numerical values of the stock are larger, indicating relatively good accuracy. Our R^2 test is also pretty high, at 0.99, indicating that the model is pretty well-fitting. We ran other metrics, such as the RMSE and MAE for the test and train splits and the model appears to be pretty accurate, so we will proceed with a linear model.
@@ -81,7 +81,7 @@ For this milestone, we updated our notebook by adding the linear regression mode
 
 The conclusion of our first model is that its a pretty good fit with relatively low MSE. We can improve on it by potentially adding more metrics to make it more accurate.
 
-### Milestone 4: Second Model 
+# Milestone 4: Second Model 
 
 We received feedback from our last model about our training and testing data split and we fixed this by manually splitting the data based on the first 80% for the training and the second 20% for the testing data. We did this instead of the randomize split we had before. This ensures that we aren't using future values to predict past values.
 
