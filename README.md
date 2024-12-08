@@ -118,7 +118,9 @@ During our modeling step, while the results we got from our first model were suc
 #### Link CSE 151A Group Project Report: https://docs.google.com/document/d/1VSGpvdCGO1kRqmZKwCLR7EzSLKd6nTViQp5yKNvCdY8/edit?usp=sharing
 
 
-## We have included our previous milestones submissions below for reference:
+# Previous Milestone Submissions 
+
+We have included our previous milestones submissions below for reference:
 
 # Milestone 1 - Project Abstract
 Our group is planning on doing a stock time series prediction. We plan on using historical data about specific stocks to predict how the stock-exchange and crypto-exchange market can fluctuate in the future. In addition, we will figure out the optimal time to buy and sell. 
