@@ -23,6 +23,9 @@ In a real-world setting, designing and training these models requires vast amoun
 
 
 ### Data Exploration
+
+![Data Exploration](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL#scrollTo=1Us-MxJhWQl2&line=6&uniqifier=1)
+
 Our first step for this project was to look through our data. After analysis of our data we found that there was no missing information or irregularities. Next we looked at the data itself to get an idea of their distributions and other statistical information.
 
 ### Data Preprocessing
