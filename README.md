@@ -1,4 +1,4 @@
-# CSE 151A Group Project
+# CSE151 Group Project
 
 Our CSE 151A group's members are:
 - Pranav Kambhampati (pkambhampati@ucsd.edu)
@@ -43,7 +43,25 @@ We trained our model using Adam as our optimizer and the MSE as our loss functio
 
 Our dataset contains 6 columns of 6393 records of data. There is a Date column, 5 columns relating to the Price, and a Volume column. There is missing or irregular data in our dataset. The price information all have very similar ranges, and volume has a very wide range. All of the columns have a heavy right-skew, and are overall increasing with time.
 
-IMAGES ADD HERE
+![image](https://github.com/user-attachments/assets/bb0e3bc2-2860-447a-9202-1aa6e06237c9)
+
+*Figure 1: Dataset Header*
+
+![image](https://github.com/user-attachments/assets/aba1077c-a429-4725-a92d-735d9f758357)
+
+*Figure 2: Missing Data*
+
+| Column     | Range                     |
+|------------|---------------------------|
+| Date       | ‘01-22-1999’ - ‘06-18-2024’|
+| Volume     | ~ (19.68M - 9.23B)        |
+| Open       | 0.035 - 132.99            |
+| High       | 0.036 - 136.33            |
+| Low        | 0.033 - 130.69            |
+| Close      | 0.034 - 135.58            |
+| Adj. Close | 0.031 - 135.58            |
+
+*Figure 3: Ranges of Columns*
 
 ### Data Preprocessing
 
@@ -55,13 +73,21 @@ Finally split our data into a training and testing set using a standard 80:20 sp
 After training our model the MSE was 0.3 indicating a good accuracy. The R2 tests were at 0.99, indicating high correlation with our features and the target price.
 We ran other metrics, such as the RMSE and MAE for the test and train splits.
 
-IMAGES ADD HERE
+![image](https://github.com/user-attachments/assets/7a43cab9-a39b-428b-96b8-1382ae3dee32)
+
+*Figure 4: Model 1 Evaluation Report*
+
+![image](https://github.com/user-attachments/assets/bcd96ea9-c2c9-48d5-91c5-ee0b8c2219f8)
+
+*Figure 5: Predicted vs Actual Prices*
 
 #### Model 2
 
 The MSE and RMSE were calculated here and showed improved performance over the linear regression model. The LSTM model also successfully predicted the trends shown through the predicted vs. actual plot. Finally, the evaluation metrics here the MSE and RMSE were lower compared to the linear model, telling us that the LSTM was better at modeling since it also considered the sequential dependencies.
 
-IMAGES ADD HERE
+![image](https://github.com/user-attachments/assets/85bfcac1-21d2-401e-b645-2e0fd1513214)
+
+*Figure 6: LTSM: Actual vs Predicted Closing Price*
 
 ## Discussion
 
@@ -111,7 +137,7 @@ During our modeling step, while the results we got from our first model were suc
 - Kevin Do: Coder: Wrote code for both models
 - Ethan Cota: Writer: Documentation and data preprocessing
 - Theodoros Hadjitofis: Writer/Github: Documentation and managing GitHub
-- Ragini Bomma: Coder: Wrote code for both models
+- Ragini Bomma: Coder/Github : Wrote code for both models
 
 
 #### Link to our Google Collab: [Jupyter Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
