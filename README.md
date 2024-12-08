@@ -8,7 +8,7 @@ Our CSE 151A group's members are:
 - Theodoros Hadjitofis (thadjitofis@ucsd.edu)
 - Ragini Bomma (rbomma@ucsd.edu)
 
-#### Link to our Google Collab: [Jupyter Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
+#### Link to our Google Collab: [Google Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
 
 # NVIDIA Stock Price Modeling Report
 
@@ -163,7 +163,7 @@ During our modeling step, while the results we got from our first model were suc
 - Ragini Bomma: Coder/Github : Wrote code for both models
 
 
-#### Link to our Google Collab: [Jupyter Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
+#### Link to our Google Collab: [Google Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
 #### Link to our Group Project Report: https://docs.google.com/document/d/1VSGpvdCGO1kRqmZKwCLR7EzSLKd6nTViQp5yKNvCdY8/edit?usp=sharing
 
 
