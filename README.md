@@ -1,4 +1,4 @@
-# CSE151GroupProject
+# CSE151 Group Project
 
 Our CSE 151A group's members are:
 - Pranav Kambhampati (pkambhampati@ucsd.edu)
@@ -10,6 +10,9 @@ Our CSE 151A group's members are:
 
 #### Link to our Google Collab: [Jupyter Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
 
+We have included our previous milestones submissions below for reference
+
+# Milestone 1 - Project Abstract
 Our group is planning on doing a stock time series prediction. We plan on using historical data about specific stocks to predict how the stock-exchange and crypto-exchange market can fluctuate in the future. In addition, we will figure out the optimal time to buy and sell. 
 
 These are the datasets we are currently planning on using:
@@ -18,11 +21,11 @@ S&P 500: https://www.kaggle.com/datasets/henryhan117/sp-500-historical-data
 
 NVIDIA: https://www.kaggle.com/datasets/programmerrdai/nvidia-stock-historical-data
 
-# Abstract (draft)
+# Abstract 
 
 Our project aims to analyze historical data on stock prices through their time series to help people figure out the best time to buy and sell stocks. We will utilize datasets on the S&P 500 stock market index or stocks like NVIDIA to train predictive models through Python that strive to capture patterns in price movements. The dataset for the S&P 500 index contains data about environment score, social score, and governance score and highest level of controversy based on ESG. The dataset for the nvidia daily stock price data has data from 2004 to 2024 with the highest/lowest price during trading day, price at closing, and volume of shares during day. Our models will be able to successfully predict the best times to buy and sell by parsing through data and finding the trends. We hope to gain insights into how machine learning models can be used to predict trends in highly volataile markets and understand the potential of machine learning in a financial application.
 
-# Data Exploration
+# Milestone 2: Data Exploration and Initial Preprocessing
 
 ## Data Evaluation
 We are dealing with numerical time-series data. We have a record for each day, containing the Open, High, Low, Close, and Adj. Close price of the stock, in addition to the volume (OHLC). We have 6393 records (observations) in our dataset, representing that many days of trading. There is no missing data.
@@ -67,7 +70,7 @@ Example Indicators
 
 [Further Examples](https://www.home.saxo/learn/guides/trading-strategies/a-guide-to-the-10-most-popular-trading-indicators)
 
-### First Model - Milestone 3
+### Milestone 3: Pre-processing
 In order to implement these indicators, we can use [TA (Technical Analysis) Lib](https://ta-lib.org/), a Python library that contains a wide range of existing functions to generate technical indicators from stock data
 
 As a part of creating a model to predict stock price, we wrote a linear regression model that uses a Moving Average Indicator, Accumulation Distribution and an RSI indicator. We also calculated the MSE after we added these metrics and plotted the prediction along the actual data. This model looks pretty promising and we will probably refine this further in the next milestone. Our current MSE is about 0.3 which we believe to be pretty low because the numerical values of the stock are larger, indicating relatively good accuracy. Our R^2 test is also pretty high, at 0.99, indicating that the model is pretty well-fitting. We ran other metrics, such as the RMSE and MAE for the test and train splits and the model appears to be pretty accurate, so we will proceed with a linear model.
@@ -78,7 +81,7 @@ For this milestone, we updated our notebook by adding the linear regression mode
 
 The conclusion of our first model is that its a pretty good fit with relatively low MSE. We can improve on it by potentially adding more metrics to make it more accurate.
 
-### Second Model - Milestone 4
+### Milestone 4: Second Model 
 
 We received feedback from our last model about our training and testing data split and we fixed this by manually splitting the data based on the first 80% for the training and the second 20% for the testing data. We did this instead of the randomize split we had before. This ensures that we aren't using future values to predict past values.
 
