@@ -111,7 +111,7 @@ During our modeling step, while the results we got from our first model were suc
 - Kevin Do: Coder: Wrote code for both models
 - Ethan Cota: Writer: Documentation and data preprocessing
 - Theodoros Hadjitofis: Writer/Github: Documentation and managing GitHub
-- Ragini Bomma: Coder/Github : Wrote code for both model
+- Ragini Bomma: Coder/Github : Wrote code for both models
 
 
 #### Link to our Google Collab: [Jupyter Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
