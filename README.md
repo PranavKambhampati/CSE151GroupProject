@@ -164,7 +164,7 @@ All in all, the results are still looking very good. We are making good progress
 
 
 #### Link to our Google Collab: [Google Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
-#### Link to our Group Project Report: https://docs.google.com/document/d/1VSGpvdCGO1kRqmZKwCLR7EzSLKd6nTViQp5yKNvCdY8/edit?usp=sharing
+#### Link to our Group Project Report: [Google Doc] [https://docs.google.com/document/d/1VSGpvdCGO1kRqmZKwCLR7EzSLKd6nTViQp5yKNvCdY8/edit?usp=sharing]
 
 
 # Previous Milestone Submissions 
