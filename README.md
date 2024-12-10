@@ -151,7 +151,7 @@ In our preprocessing step, we tried a few different combinations of indicators a
 
 During our modeling step, while the results we got from our first model were successful, it may have been a good idea to pick a more complex model to start even if we achieved worse results. We knew that the linear model alone would not be enough to capture the entire relationship between our features and the data, but it was helpful in that it confirmed that there was a strong correlation with the indicators that we picked. This model also does not account for overfitting, and is much more susceptible to outliers and unseen data. Luckily much of these problems we had in our first model we were able to account for by implementing the LSTM. Our predictions and trend line looked much better under this model. We used an index fund and a tech company that have been steadily increasing for a long time, so it would make sense that this would work out. We are unlikely to see the same results if we applied the model onto a much more volatile stock, or one that did not have as large of a market capitalization. This model alone only accounts for details within the price and volume itself, if there was information regarding the company, or other technical details that don’t appear within the price data, our model would start making inaccurate predictions
 	
- All in all, the results are still looking very good. We are making good progress towards something that could actually solve the stock market problem. It is also important to remember that stock price prediction is very hard because of the influence of countless factors. However, by adding more and more features and making sure to consider everything that comes to a stock market price, we should eventually be able to somewhat accurately predict prices.
+All in all, the results are still looking very good. We are making good progress towards something that could actually solve the stock market problem. It is also important to remember that stock price prediction is very hard because of the influence of countless factors. However, by adding more and more features and making sure to consider everything that comes to a stock market price, we should eventually be able to somewhat accurately predict prices.
 
 ## Statement of Collaboration
 
@@ -160,7 +160,7 @@ During our modeling step, while the results we got from our first model were suc
 - Kevin Do: Coder: Wrote code for both models
 - Ethan Cota: Writer: Documentation and data preprocessing
 - Theodoros Hadjitofis: Writer/Github: Documentation and managing GitHub
-- Ragini Bomma: Coder/Github : Wrote code for both models
+- Ragini Bomma: Coder: Wrote code for both models
 
 
 #### Link to our Google Collab: [Google Colab Notebook](https://colab.research.google.com/drive/1Edk4vvJ_NKKRyiIwQywZn-mUQE3yYegL?usp=sharing)
